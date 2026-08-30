@@ -372,4 +372,16 @@ directly and checking cost on both sides of the y=3 boundary:
 | (0, 2.5) — outside restricted | free (0) | 0 |
 | (0, -5.0) — well outside restricted | free (0) | 0 |
 
+After clicking 2D-pose estimate, map with restricted zone at y >= 3 appears
+![alt text](image-6.png)
+![alt text](image-5.png)
+
+Robot navigates normally within unrestricted zone
+![alt text](image-12.png)
+![alt text](image-14.png)
+![alt text](image-13.png)
+**screenrecording**
+
+Setting new nav2 goal in **restricted zone**
+
 # Experiment 3
