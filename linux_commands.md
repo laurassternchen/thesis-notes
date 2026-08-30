@@ -1,0 +1,1 @@
+cp ~/<directory/file to copy> <where to copy tp>:/root/
