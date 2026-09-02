@@ -1,28 +1,49 @@
-# First set-up and running default nav2 map and gazebo world
-- installation docker.io. 
-    - For more information: https://docs.ros.org/en/foxy/How-To-Guides/Setup-ROS-2-with-VSCode-and-Docker-Container.html
-- installation ROS2
-- installation nav2
-- installation gazebo
---> https://docs.nav2.org/getting_started/index.html#installation
+# First Setup: Running the Default Nav2 Map and Gazebo World
 
+## Installation
 
-Starting docker
-Try starting like this: 
-1. docker start 3f0944698fa6
-  
-- docker run <id> creates a new container with <id>
+- Install `docker.io`
+  - More info: https://docs.ros.org/en/foxy/How-To-Guides/Setup-ROS-2-with-VSCode-and-Docker-Container.html
+- Install ROS2
+- Install Nav2
+- Install Gazebo
 
-Enter container: docker exec -it 3f0944698fa6 bash
-    Container id: 3f0944698fa6
-    Find out container id: <command>
-Now you're inside the container
+See: https://docs.nav2.org/getting_started/index.html#installation
 
-2. Run inside container: source /opt/ros/jazzy/setup.bash
-- jazzy is the name of the ros_distro
-- Find out name: echo $ROS_DISTRO
+## Starting Docker
 
-3. ros2 launch <package_name> <launch_file>.launch.py
-ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
-    https://docs.nav2.org/getting_started/index.html#installation
+1. Start the container:
 
+   ```
+   docker start 3f0944698fa6
+   ```
+
+   - `docker run <id>` creates a new container with `<id>`
+
+2. Enter the container:
+
+   ```
+   docker exec -it 3f0944698fa6 bash
+   ```
+
+   - Container id: `3f0944698fa6`
+   - Find the container id: `docker ps`
+
+   You're now inside the container.
+
+3. Source the ROS setup script:
+
+   ```
+   source /opt/ros/jazzy/setup.bash
+   ```
+
+   - `jazzy` is the ROS distro name
+   - Find the distro name: `echo $ROS_DISTRO`
+
+4. Launch the simulation:
+
+   ```
+   ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
+   ```
+
+   See: https://docs.nav2.org/getting_started/index.html#installation
