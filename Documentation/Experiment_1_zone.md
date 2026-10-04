@@ -380,6 +380,8 @@ Robot navigates normally within unrestricted zone
 ![alt text](image-12.png)
 ![alt text](image-14.png)
 ![alt text](image-13.png)
+
+Robot doesn't navigate to restricted zone
 **screenrecording**
 
 Setting new nav2 goal in **restricted zone**

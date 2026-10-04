@@ -18,5 +18,8 @@ should give
 - /home/ws/install/my_robot_sim
 
 3. For custom map and world
-ros2 launch my_robot_sim sim.launch.py
+ros2 launch my_robot_sim sim.launch.py - keepout experiment
+
+
+ros2 launch my_robot_sim sim_speed.launch.py - speed limit in keepout zone
 
